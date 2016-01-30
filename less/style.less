@@ -1,0 +1,169 @@
+.logo {
+  a {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-align-items: center;
+    align-items: center;
+    &:before {
+      content: "";
+      display: block;
+      margin-right: 15px;
+      width: 30px;
+      height: 40px;
+      background-image: url('../asset/image/logo-dark-small.png');
+      background-repeat: no-repeat;
+      -webkit-background-size: 30px 38px;
+      background-size: 30px 38px;
+      background-position: center center;
+    }
+  }
+}
+
+.logo-white-medium {
+  height: 100px;
+  width: 80px;
+  background-image: url('../asset/image/logo-white-medium.png');
+  -webkit-background-size: 75px 96px;
+  background-size: 75px 96px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.logo-orange-large {
+  height: 350px;
+  width: 210px;
+  background-image: url('../asset/image/logo-orange-large.png');
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.the-knight-large {
+  height: 560px;
+  width: 100%;
+  max-width: 385px;
+  background-image: url('../asset/image/the-knight-coloring-large.png');
+  -webkit-background-size: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.page-section {
+  .content {
+    -webkit-flex-grow: 1;
+    flex-grow: 1;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-align-items: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 15px;
+  }
+  &.greeting {
+    background-color: #003b56;
+    color: #ffffff;
+    .content {
+      padding: 60px 45px;
+      .logo-white-medium {
+        margin-top: 30px;
+      }
+    }
+  }
+  &.the-knight {
+    .content {
+      .btn {
+        font-size: 18px;
+        font-weight: 600;
+      }
+    }
+    .separator {
+      margin-top: 120px;
+      height: 99.665px;
+      width: 100%;
+      background-image: url('../asset/svg/zig-zac-separator.svg');
+      background-repeat: repeat-x;
+      -webkit-background-size: 1366px 99.665px;
+      background-size: 1366px 99.665px;
+      background-position: 10%;
+    }
+  }
+}
+
+.work {
+  &.web-development {
+    .decorate {
+      border-color: #ffcc55;
+      background-image: url('../asset/image/work-web-development.png');
+      -webkit-background-size: 40%;
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-color: #ffcc55;
+    }
+  }
+
+  &.web-design {
+    .decorate {
+      border-color: #0083de;
+      background-color: #0083de;
+      background-image: url('../asset/image/work-web-design.png');
+      -webkit-background-size: 50%;
+      background-size: 50%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+
+  &.e-commerce {
+    .decorate {
+      border-color: #003b56;
+      background-color: #003b56;
+      background-image: url('../asset/image/work-e-commerce.png');
+      -webkit-background-size: 40%;
+      background-size: 40%;
+      background-repeat: no-repeat;
+      background-position: center center;
+    }
+  }
+}
+
+.in-charge {
+  .human {
+    &.alq {
+      display: none;
+      background-image: url('../asset/image/in-charge/alq.jpg');
+      -webkit-background-size: 700px;
+      background-size: 700px;
+      background-repeat: no-repeat;
+      background-position: -150px center;
+    }
+    &.hpq {
+      background-image: url('../asset/image/in-charge/hpq.jpg');
+      -webkit-background-size: 1500px;
+      background-size: 1500px;
+      background-repeat: no-repeat;
+      background-position: -480px -100px;
+    }
+    &.mmm{
+      background-image: url('../asset/image/in-charge/mmm.jpg');
+      -webkit-background-size: 620px;
+      background-size: 620px;
+      background-repeat: no-repeat;
+      background-position: -300px;
+    }
+    &.sbv {
+      background-image: url('../asset/image/in-charge/sbv.jpg');
+      -webkit-background-size: 320px;
+      background-size: 320px;
+      background-repeat: no-repeat;
+      background-position: -30px -50px;
+    }
+  }
+}

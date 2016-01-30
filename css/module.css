@@ -1,0 +1,91 @@
+.main-header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-align-items: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffffff;
+  color: #333333;
+  min-height: 80px;
+  -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+.main-header .logo {
+  margin: 15px 0;
+}
+.main-header .interactions {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.main-header .interactions .navigators {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+.main-header .interactions .navigators .navigator {
+  font-weight: 800;
+  margin: 10px 15px;
+}
+.main-header .interactions .actions {
+  margin: 15px 0;
+}
+.main-header .interactions .actions .btn {
+  font-weight: 800;
+}
+.works {
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+}
+.works .work {
+  margin: 30px 0;
+}
+.works .work .literal {
+  margin: 15px 0 30px 0;
+  font-weight: 600;
+}
+.works .work .decorate {
+  width: 345px;
+  height: 345px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 8px;
+}
+.in-charge {
+  width: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 60px 0;
+}
+.in-charge .human {
+  width: 295px;
+  height: 475px;
+  border: solid 8px #ffffff;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  margin: 0 15px;
+}

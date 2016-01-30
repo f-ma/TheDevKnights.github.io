@@ -1,0 +1,6 @@
+.in-charge .human.alq:hover {
+  background-image: url("../asset/image/in-charge/alq-hover.jpg");
+  -webkit-background-size: 960px;
+  background-size: 960px;
+  background-position: -400px -130px;
+}

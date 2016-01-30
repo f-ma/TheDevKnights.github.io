@@ -1,0 +1,20 @@
+.footer {
+  margin: 45px 0 5px 0;
+  padding: 15px 0;
+  border-top: solid 1px #ddd;
+}
+.footer .content .btn {
+  font-weight: 800;
+}
+.page-section.screen .wrapper {
+  min-height: 100vh;
+}
+.page-section .wrapper {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: column nowrap;
+  flex-flow: column nowrap;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
