@@ -115,7 +115,6 @@
   background-position: center center;
 }
 .in-charge .human.alq {
-  display: none;
   background-image: url('../asset/image/in-charge/alq.jpg');
   -webkit-background-size: 700px;
   background-size: 700px;
