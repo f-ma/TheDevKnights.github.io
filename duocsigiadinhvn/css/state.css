@@ -1,0 +1,1 @@
+#search-toggle{display:none}#search-toggle:checked+.search-container{width:100%}#search-toggle:checked+.search-container .search-box{display:block !important}#search-toggle:checked+.search-container .search-button{background-color:#00607D !important}

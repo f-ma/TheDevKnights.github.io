@@ -1,0 +1,500 @@
+@import "variables.less";
+
+.btn.small, input[type='text'].small {
+    height: @small-height;
+}
+
+.btn.normal, input[type='text'].normal {
+    height: @normal-height;
+}
+
+.btn.large, input[type='text'].large {
+    height: @large-height;
+}
+
+.btn.huge, input[type='text'].huge {
+    height: @huge-height;
+}
+
+.btn.round {
+    border-radius: 2px;
+}
+
+.btn.pipe.primary {
+    border: solid 2px @primary-color;
+    color: @primary-color;
+    background: transparent;
+    &:active {
+        opacity: .9;
+        background-color: transparent;
+    }
+}
+
+.btn.pipe.round {
+    border-radius: 5px;
+}
+
+.btn.transparent {
+    background: transparent;
+}
+
+.btn.transparent.bright {
+    color: white;
+}
+
+.btn.transparent.dark {
+    color: inherit;
+}
+
+.btn.primary {
+    background-color: @primary-color;
+    color: white;
+    &:active {
+        background-color: lighten(color(@primary-color), 5%);
+    }
+}
+
+.btn.accent {
+    background-color: @accent-color;
+    color: white;
+    &:active {
+        background-color: lighten(color(@accent-color), 5%);
+    }
+}
+
+#header {
+    .header-top {
+        padding: 0 100px 15px 0;
+        background-color: @primary-background-color;
+        -webkit-flex-grow: 0;
+        flex-grow: 0;
+        -webkit-flex-shrink: 0;
+        flex-shrink: 0;
+        -webkit-justify-content: flex-end;
+        justify-content: flex-end;
+        -webkit-align-items: flex-end;
+        align-items: flex-end;
+        .navigation {
+            margin: 0 30px 0 0;
+            .nav-main {
+                margin: 0 30px 0 0;
+                -webkit-flex-grow: 1;
+                flex-grow: 1;
+                -webkit-flex-shrink: 1;
+                flex-shrink: 1;
+                -webkit-align-items: center;
+                align-items: center;
+                .nav-main-link {
+                    margin: 0 30px 0 0;
+                    color: white;
+                    font-weight: 600;
+                    &:link {
+                        color: white;
+                    }
+                }
+            }
+            .search-container {
+                -webkit-flex-grow: 1;
+                flex-grow: 1;
+                -webkit-flex-shrink: 1;
+                flex-shrink: 1;
+                -webkit-justify-content: flex-end;
+                justify-content: flex-end;
+                -webkit-align-items: center;
+                align-items: center;
+                .search-box {
+                    display: none;
+                    -webkit-flex-grow: 1;
+                    flex-grow: 1;
+                    -webkit-flex-shrink: 1;
+                    flex-shrink: 1;
+                    padding: 0 15px;
+                }
+                .search-button {
+                    width: @normal-height;
+                    background: url(../assets/icons/search.png) no-repeat;
+                    background-size: 15px;
+                    background-position: center center;
+                    &:hover {
+                        background-color: @secondary-color;
+                    }
+                }
+            }
+        }
+    }
+    .big-header {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        flex-shrink: 1;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: flex-start;
+        justify-content: flex-start;
+        overflow: hidden;
+        .background {
+            height: 100%;
+            width: 100%;
+            -webkit-justify-content: center;
+            justify-content: center;
+            -webkit-align-items: stretch;
+            align-items: stretch;
+            .left, .right {
+                -webkit-flex-grow: 1;
+                flex-grow: 1;
+                -webkit-flex-shrink: 1;
+                flex-shrink: 1;
+            }
+            .left {
+                background-color: @primary-background-color;
+            }
+            .right {
+                background-color: @primary-dark-background-color;
+            }
+        }
+        .canvas {
+            background: url(../assets/patterns/big-header.svg) no-repeat;
+            background-size: auto 100%;
+            background-position: center top;
+            overflow: hidden;
+        }
+        .main {
+            -webkit-flex-grow: 1;
+            flex-grow: 1;
+            -webkit-flex-shrink: 1;
+            flex-shrink: 1;
+            -webkit-justify-content: center;
+            justify-content: center;
+            > .decorate {
+                width: 630px;
+                -webkit-flex-grow: 0;
+                flex-grow: 0;
+                -webkit-flex-shrink: 2;
+                flex-shrink: 2;
+                background: url(../assets/media/medic.png) no-repeat;
+                background-size: 100% auto;
+                background-position: bottom left;
+            }
+            > .literature {
+                margin: 0 0 0 160px;
+                padding: 120px 0 30px 0;
+                -webkit-flex-grow: 1;
+                flex-grow: 1;
+                -webkit-flex-shrink: 0;
+                flex-shrink: 0;
+                -webkit-justify-content: space-between;
+                justify-content: space-between;
+                .register-form {
+                    -webkit-align-items: stretch;
+                    align-items: stretch;
+                    header {
+                        -webkit-justify-content: space-between;
+                        justify-content: space-between;
+                        -webkit-align-items: center;
+                        align-items: center;
+                        > .literature {
+                            color: white;
+                            .title {
+                                font-size: 24px;
+                                font-weight: 600;
+                            }
+                        }
+                        .logo {
+                            width: 50px;
+                            height: 50px;
+                            background-color: #d6d6d6;
+                            border: dashed 2px #999999;
+                        }
+                    }
+                    .primary {
+                        color: white;
+                        margin: 15px 0 0 0;
+                        input[type='text'] {
+                            color: #4d4d4d;
+                            padding: 0 15px;
+                            margin-top: 15px;
+                            font-weight: 600;
+                            box-shadow: 1px 1px 4px rgba(0, 0, 0, .2);
+                            border-radius: 2px;
+                        }
+                        .btn {
+                            margin: 30px 0 15px 0;
+                            font-weight: 600;
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .social {
+                    text-align: center;
+                    font-size: 24px;
+                    color: white;
+                    > * {
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#introduction {
+    -webkit-align-items: center;
+    align-items: center;
+    border-bottom: solid 1px @border-color;
+    > header {
+        -webkit-align-self: stretch;
+        align-self: stretch;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-align-items: center;
+        align-items: center;
+        border-bottom: solid 1px @border-color;
+        > .decorate {
+            width: 77px;
+            height: 77px;
+            border: solid 1px #cccccc;
+            background: url(../assets/icons/microscope.png) no-repeat;
+            background-size: 38px 53px;
+            background-position: center center;
+        }
+        > .literature {
+            margin-left: 15px;
+            a, a:link {
+                color: @link-color;
+            }
+            a:hover {
+                text-decoration: underline;
+            }
+            h3 {
+                font-weight: 600;
+            }
+            p {
+                max-width: 365px;
+            }
+        }        
+    }
+    > .primary {
+        padding: 0 170px;
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        flex-shrink: 1;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        > .title {
+            margin-bottom: 5px;
+            text-align: center;
+            font-size: 36px;            
+        }
+        > .subtitle {
+            font-size: 18px;
+            text-align: center;
+            max-width: 600px;
+        }
+        > .decorate {
+            margin: 92px 0 0 0;
+            width: 100%;
+            height: 135px;
+            background: url(../assets/icons/heart-beat.png);
+            background-repeat: repeat-x;
+            background-size: 205px 135px;
+            background-position: 50%;
+        }
+        .features {
+            margin: 30px 0 0 0;
+            .item {
+                &.accent {
+                    margin: 0 30px;
+                    > header {
+                        color: @accent-color;
+                    }
+                }
+                &.primary {
+                    > header {
+                        color: @primary-background-color;
+                    }
+                }
+                &.primary-dark {
+                    > header {
+                        color: @primary-dark-background-color;
+                    }
+                }
+                > header {
+                    margin-bottom: 5px;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-flow: row nowrap;
+                    flex-flow: row nowrap;
+                    -webkit-align-items: center;
+                    align-items: center;
+                    .fa {
+                        font-size: 64px;
+                    }
+                    .title {
+                        margin: 0 15px 0 0;
+                        font-size: 18px;
+                        font-weight: 600;
+                    }
+                }
+                p {
+                    font-size: 16px;
+                    max-width: 318px;
+                }
+            }
+        }
+    }
+}
+
+#why-us {
+    margin: auto;
+    padding: 80px 60px;
+    -webkit-justify-content: center;
+    justify-content: center;
+    > .literature {
+        -webkit-flex-grow: 1;
+        flex-grow: 1;
+        -webkit-flex-shrink: 1;
+        flex-shrink: 1;
+        > .title {
+            color: @primary-color;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .features {
+            margin-top: 60px;
+            
+            > .item {
+                margin: 0 0 30px 0;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+                
+                
+                &.time {
+                    > .decorate {
+                        background: url(../assets/icons/time.png) no-repeat;
+                        background-size: 36px;
+                        background-position: center center;
+                    }
+                }
+                
+                &.responsibility {
+                    > .decorate {
+                        background: url(../assets/icons/responsibility.png) no-repeat;
+                        background-size: 36px;
+                        background-position: center center;
+                    }
+                }
+                
+                &.accurate {
+                    > .decorate {
+                        background: url(../assets/icons/accurate.png) no-repeat;
+                        background-size: 36px;
+                        background-position: center center;
+                    }
+                }
+                
+                &.understanding {
+                    > .decorate {
+                        background: url(../assets/icons/understanding.png) no-repeat;
+                        background-size: 36px;
+                        background-position: center center;
+                    }
+                }
+                
+                > .decorate {
+                    -webkit-flex-grow: 0;
+                    flex-grow: 0;
+                    -webkit-flex-shrink: 0;
+                    flex-shrink: 0;
+                    margin-right: 15px;
+                    width: 70px;
+                    height: 70px;
+                    border: solid 1px @border-color;
+                }
+                > .literature {
+                    .title {
+                        color: @primary-color;
+                        font-weight: 600;
+                        font-size: 16px;
+                    }
+                    .content {
+                        max-width: 530px;
+                        font-size: 16px;
+                    }
+                }
+            }
+        }
+        .prom {
+            padding-top: 30px;
+            border-top: dashed 1px @border-color;
+            > .content {
+                margin-bottom: 20px;
+                font-size: 16px;
+                opacity: .7;
+            }
+            
+            .btn {
+                padding: 0 30px;
+                height: 64px;
+                display: -webkit-inline-flex;
+                display: inline-flex;
+                -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+                -webkit-align-items: center;
+                align-items: center;
+                > .decorate {
+                    -webkit-flex-grow: 0;
+                    flex-grow: 0;
+                    -webkit-flex-shrink: 0;
+                    flex-shrink: 0;
+                    margin-right: 7px;
+                    width: 27px;
+                    height: 37px;
+                    background: url(../assets/icons/account-1.png) no-repeat;
+                    background-size: 70% auto;
+                    background-position: center center;
+                    border: solid 1px @primary-color;
+                }
+                
+                > .literature {
+                    font-size: 16px;
+                    font-weight: 600;
+                    color: @primary-color;
+                }
+            }
+        }
+    }
+    > .decorate {
+        width: 517px;
+        -webkit-flex-grow: 0;
+        flex-grow: 0;
+        -webkit-flex-shrink: 0;
+        flex-shrink: 0;
+    }
+}
+
+#final-decoration {
+    position: absolute;
+    right: 5%;
+    bottom: 206px;
+    width: 517px;
+    height: 800px;
+    display: block;
+    -webkit-flex-grow: 0;
+    flex-grow: 0;
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+    background: url(../assets/icons/stethoscope.png) no-repeat;
+    background-size: 100% auto;
+    background-position: left bottom;
+    z-index: 1;
+}
+
+#footer {
+    background-color: @footer-background-color;
+    border-top: dashed 3px #dddddd;
+}

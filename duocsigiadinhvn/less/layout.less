@@ -1,0 +1,169 @@
+@import "variables.less";
+
+#header {
+    height: 100vh;
+    min-height: 768px;
+    max-height: 768px;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    .header-top {
+        position: relative;
+        height: 92px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+
+        .navigation {
+            position: relative;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            .nav-main {
+                position: relative;
+                height: @normal-height;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+            }
+
+            .search-container {
+                position: absolute;
+                top: 0;
+                right: 0;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: row nowrap;
+                flex-flow: row nowrap;
+            }
+        }
+    }
+    .big-header {
+        position: relative;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        }
+        .canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            margin: auto;
+            max-width: 1366px;
+            height: 100%;
+        }
+        .main {
+            position: relative;
+            display: -webkit-flex;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+            .literature {
+                position: relative;
+                display: -webkit-flex;
+                display: flex;
+                -webkit-flex-flow: column nowrap;
+                flex-flow: column nowrap;
+                .register-form {
+                    position: relative;
+                    width: 310px;
+                    display: -webkit-flex;
+                    display: flex;
+                    -webkit-flex-flow: column nowrap;
+                    flex-flow: column nowrap;
+                    header, secondary {
+                        position: relative;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex-flow: row nowrap;
+                        flex-flow: row nowrap;
+                    }
+                    .primary {
+                        position: relative;
+                        display: -webkit-flex;
+                        display: flex;
+                        -webkit-flex-flow: column nowrap;
+                        flex-flow: column nowrap;
+                    }
+                }
+            }
+        }
+    }
+}
+
+#introduction {
+    position: relative;
+    height: 100vh;
+    min-height: 700px;
+    max-height: 768px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+    > header {
+        position: relative;
+        height: 140px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: row nowrap;
+        flex-flow: row nowrap;
+    }
+    > .primary {
+        position: relative;
+        max-width: 1366px;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+        .features {
+            position: relative;
+            -webkit-display: flex;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        }
+    }
+}
+
+#why-us {
+    position: relative;
+    max-width: 1366px;
+    height: 100vh;
+    min-height: 820px;
+    max-height: 1024px;
+    display: -ewbkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    > .literature {
+        position: relative;
+        display: -ewbkit-flex;
+        display: flex;
+        -webkit-flex-flow: column nowrap;
+        flex-flow: column nowrap;
+    }
+}
+
+#footer {
+    position: relative;
+    height: 262px;
+    display: -ewbkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+}

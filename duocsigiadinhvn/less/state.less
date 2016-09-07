@@ -1,0 +1,15 @@
+@import "variables.less";
+
+#search-toggle {
+    display: none;
+}
+
+#search-toggle:checked + .search-container {
+    width: 100%;
+    .search-box {
+        display: block !important;
+    }
+    .search-button {
+        background-color: @secondary-color !important;
+    }
+}
