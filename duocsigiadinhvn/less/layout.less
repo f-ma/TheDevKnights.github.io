@@ -9,7 +9,7 @@
     display: flex;
     -webkit-flex-flow: column nowrap;
     flex-flow: column nowrap;
-    .header-top {
+    .header-top, .header-secondary-top {
         position: relative;
         height: 92px;
         display: -webkit-flex;
@@ -43,6 +43,18 @@
             }
         }
     }
+    
+    .header-secondary-top {
+        height: 64px;
+        .logo-container {
+            display: -webki-tflex;
+            display: flex;
+            -webkit-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+        }
+    }
+    
+    
     .big-header {
         position: relative;
         display: -webkit-flex;
@@ -106,11 +118,10 @@
     }
 }
 
-#introduction {
+#introduction, .section-common {
     position: relative;
     height: 100vh;
     min-height: 700px;
-    max-height: 768px;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-flow: column nowrap;
