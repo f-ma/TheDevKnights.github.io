@@ -1,6 +1,6 @@
 @import "variables.less";
 
-#header {
+#header, #header-short {
     height: 100vh;
     min-height: 768px;
     max-height: 768px;
@@ -36,10 +36,6 @@
                 position: absolute;
                 top: 0;
                 right: 0;
-                display: -webkit-flex;
-                display: flex;
-                -webkit-flex-flow: row nowrap;
-                flex-flow: row nowrap;
             }
         }
     }
@@ -116,6 +112,12 @@
             }
         }
     }
+    
+    &.short {
+        height: auto;
+        max-height: none;
+        min-height: 0;
+    }
 }
 
 #introduction, .section-common {
@@ -168,6 +170,13 @@
         -webkit-flex-flow: column nowrap;
         flex-flow: column nowrap;
     }
+}
+
+#news {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    flex-flow: row nowrap;
 }
 
 #footer {
